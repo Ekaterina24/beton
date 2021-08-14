@@ -11,6 +11,37 @@
     }
 }
 
+@media (max-width: 1250px) {
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
+        .about__container {
+            .about__img {
+                img {
+                    width: 550px;
+                }
+            }
+        }
+    }
+    .products {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 35px;
+        .products__container {
+            h2 {
+                text-align: center;
+                font-size: 50px;
+                margin-bottom: 40px;
+            }
+            .products__cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
 @media (max-width: 1220px) {
     .main {
         padding-top: 60px;
@@ -167,8 +198,44 @@
             }
         }
     }
+
+
+    .about {
+        .about__container {
+            .about__text {
+                font-weight: 800;
+            }
+            .about__img {
+                position: absolute; /*вырываем из потока элементов*/
+                z-index: -1;
+                right: calc(50% - 400px);
+                img {
+                    width: 625px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
     
-    
+}
+
+@media (max-width: 980px) {
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+        width: 80%;
+    }
+    #accordion div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 860px) {
+    .ui-icon-triangle-1-e {
+        width: 25px;
+        margin-left: 10px;
+    }
+    .ui-state-active .ui-icon, .ui-button:active .ui-icon {
+        width: 25px;
+    }
 }
 
 @media (max-width: 840px) {
@@ -182,6 +249,13 @@
             }
         }
     }
+    .about {
+        .about__container {
+            .about__img {
+                right: calc(50% - 330px);
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -192,6 +266,40 @@
         &__icons {
             display: none;
         }
+    }
+
+}
+
+@media (max-width: 665px) {
+    .about {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        .about__container {
+            .about__text {
+                h2 {
+                    font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                p {
+                    text-align: center;
+                    font-size: 13px;
+                    line-height: 24px;
+                    margin-bottom: 28px;
+                    font-weight: 500;
+                }
+            }
+            .about__img {
+                display: none;
+            }
+        }
+    }
+    .questions-title {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .ui-accordion .ui-accordion-header {
+        font-size: 16px;
     }
 }
 
@@ -237,6 +345,46 @@
         }
     }
     
+}
+
+@media (max-width: 600px) {
+    .ui-icon-triangle-1-e {
+        width: 55px;
+    }
+    .ui-state-active .ui-icon, .ui-button:active .ui-icon {
+        width: 55px;
+    }
+    .section {
+        height: 142px;
+    }
+    .products {
+        .products__container {
+            .products__cards {
+                .products__card {
+                    width: 272px;
+                    margin: 0;
+                    padding: 25px 15px 15px;
+                    margin-bottom: 15px;
+                    .products__card__block {
+                        text-align: center;
+                        display: block;
+                        .drop__img {
+                            height: 90px;
+                        }
+                        span {
+                            display: inline-block;
+                            &.block {
+                                margin-top: 15px;
+                            }
+                            &.drop {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 510px) {
