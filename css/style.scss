@@ -346,6 +346,42 @@ a {
     }
 }
 
+.services {
+    padding: 65px 0 110px;
+    .services__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        h2 {
+            margin: 0;
+            font-weight: 800;
+            font-size: 40px;
+            margin-bottom: 62px;
+        }
+        .services__block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .services__text {
+                .services__text__words {
+                    max-width: 550px;
+                    margin-bottom: 62px;
+                    font-size: 19px;
+                    line-height: 31px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .services__image {
+                img {
+                    width: 565px;
+                }
+            }
+        }
+    }
+}
+
+
 
 
 

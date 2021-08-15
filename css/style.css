@@ -446,3 +446,46 @@ a {
 .products .products__container .products__cards .products__card .products__card__block span {
   font-size: 30px;
 }
+
+.services {
+  padding: 65px 0 110px;
+}
+
+.services .services__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services .services__container h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 62px;
+}
+
+.services .services__container .services__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services__container .services__block .services__text .services__text__words {
+  max-width: 550px;
+  margin-bottom: 62px;
+  font-size: 19px;
+  line-height: 31px;
+}
+
+.services .services__container .services__block .services__text .services__text__words:last-child {
+  margin-bottom: 0;
+}
+
+.services .services__container .services__block .services__image img {
+  width: 565px;
+}

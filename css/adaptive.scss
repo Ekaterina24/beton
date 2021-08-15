@@ -40,6 +40,23 @@
             }
         }
     }
+    .services {
+        padding-right: 20px;
+        padding-left: 20px;
+        .services__container {
+            h2 {
+                text-align: center;
+            }
+            .services__block {
+                justify-content: space-evenly;
+                .services__image {
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1220px) {
@@ -133,6 +150,34 @@
                 width: 510px;
                 font-size: 28px;
                 padding: 30px;
+            }
+        }
+    }
+
+    .services {
+        padding-top: 45px;
+        .services__container {
+            h2 {
+                margin-bottom: 40px;
+            }
+            .services__block {
+                flex-direction: column-reverse;
+                text-align: center;
+                .services__text {
+                    .services__text__words {
+                        max-width: 592px;
+                        margin-bottom: 62px;
+                        font-size: 30px;
+                        line-height: 45px;
+                    }
+
+                }
+                .services__image {
+                    margin-bottom: 50px;
+                    img {
+                        width: 450px;
+                    }
+                }
             }
         }
     }
@@ -364,7 +409,7 @@
                     width: 272px;
                     margin: 0;
                     padding: 25px 15px 15px;
-                    margin-bottom: 15px;
+                    margin-bottom: 35px;
                     .products__card__block {
                         text-align: center;
                         display: block;
@@ -428,6 +473,31 @@
                 width: 260px;
                 font-size: 17px;
                 padding: 22px;
+            }
+        }
+    }
+
+    .services {
+        padding-top: 30px;
+        padding-bottom: 45px;
+        .services__container {
+            h2 {
+                margin-bottom: 25px;
+            }
+            .services__block {
+                .services__text {
+                    .services__text__words {
+                        margin-bottom: 42px;
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                }
+                .services__image {
+                    margin-bottom: 25px;
+                    img {
+                        width: 265px;
+                    }
+                }
             }
         }
     }

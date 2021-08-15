@@ -40,6 +40,21 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .services {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .services .services__container h2 {
+    text-align: center;
+  }
+  .services .services__container .services__block {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .services .services__container .services__block .services__image img {
+    width: 500px;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -134,6 +149,31 @@
     width: 510px;
     font-size: 28px;
     padding: 30px;
+  }
+  .services {
+    padding-top: 45px;
+  }
+  .services .services__container h2 {
+    margin-bottom: 40px;
+  }
+  .services .services__container .services__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .services .services__container .services__block .services__text .services__text__words {
+    max-width: 592px;
+    margin-bottom: 62px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .services .services__container .services__block .services__image {
+    margin-bottom: 50px;
+  }
+  .services .services__container .services__block .services__image img {
+    width: 450px;
   }
 }
 
@@ -344,7 +384,7 @@
     width: 272px;
     margin: 0;
     padding: 25px 15px 15px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
   .products .products__container .products__cards .products__card .products__card__block {
     text-align: center;
@@ -401,5 +441,23 @@
     width: 260px;
     font-size: 17px;
     padding: 22px;
+  }
+  .services {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  .services .services__container h2 {
+    margin-bottom: 25px;
+  }
+  .services .services__container .services__block .services__text .services__text__words {
+    margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .services .services__container .services__block .services__image {
+    margin-bottom: 25px;
+  }
+  .services .services__container .services__block .services__image img {
+    width: 265px;
   }
 }
