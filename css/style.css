@@ -489,3 +489,53 @@ a {
 .services .services__container .services__block .services__image img {
   width: 565px;
 }
+
+.delivery {
+  background: #F7C137;
+  padding: 80px 0 55px;
+}
+
+.delivery .delivery__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.delivery .delivery__container h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 55px;
+}
+
+.delivery .delivery__container .delivery__text {
+  max-width: 1005px;
+  margin-bottom: 40px;
+  font-size: 37px;
+  line-height: 55px;
+}
+
+.delivery .delivery__container table {
+  text-align: center;
+  border: 2px solid black;
+}
+
+.delivery .delivery__container table thead {
+  background: rgba(189, 159, 159, 0.86);
+}
+
+.delivery .delivery__container table thead td {
+  padding: 12px 0;
+}
+
+.delivery .delivery__container table tbody {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.delivery .delivery__container table tbody td {
+  padding: 32px 0;
+}
+
+.delivery .delivery__container table td {
+  font-weight: 300;
+  font-size: 40px;
+}
