@@ -62,6 +62,26 @@
         padding-right: 20px;
         padding-left: 20px;
     }
+    .reviews {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+    .contacts {
+        padding-right: 20px;
+        padding-left: 20px;
+        .contacts__container {
+            .contacts__block {
+                .contacts__text {
+                    .contacts__address {
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1220px) {
@@ -106,6 +126,18 @@
         
     }
     
+}
+
+@media (max-width: 1120px) {
+    .partners {
+        padding-top: 35px;
+        .partners__container {
+            .partners__block {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 @media (max-width: 1080px) {
@@ -172,8 +204,8 @@
                     .services__text__words {
                         max-width: 592px;
                         margin-bottom: 62px;
-                        font-size: 30px;
-                        line-height: 45px;
+                        font-size: 20px;
+                        line-height: 36px;
                     }
 
                 }
@@ -185,6 +217,13 @@
                 }
             }
         }
+
+    }
+}
+
+@media (max-width: 1030px) {
+    .slick-prev, .slick-next  {
+        top: -30px;
     }
 }
 
@@ -193,8 +232,8 @@
         padding-top: 30px;
         .delivery__container {
             h2 {
-                font-size: 50px;
-                margin-bottom: 40px;
+                font-size: 30px;
+                margin-bottom: 25px;
             }
             text-align: center;
             table {
@@ -215,8 +254,8 @@
                 }
             }
             .delivery__text {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 23px;
+                line-height: 33px;
                 max-width: 567px;
                 margin-left: auto;
                 margin-right: auto;
@@ -305,6 +344,29 @@
         }
     }
     
+}
+
+@media (max-width: 990px) {
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        .contacts__container {
+            h2 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .contacts__block {
+                flex-direction: column;
+                align-items: center;
+                .contacts__img {
+                    width: 400px;
+                }
+                .contacts__text {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 980px) {
@@ -477,10 +539,6 @@
     .delivery {
         padding-top: 15px;
         .delivery__container {
-            h2 {
-                font-size: 40px;
-                margin-bottom: 20px;
-            }
             .delivery__text {
                 font-size: 16px;
                 line-height: 25px;
@@ -495,6 +553,31 @@
                         padding: 20px 0;
                     }
                 }
+            }
+        }
+    }
+    .reviews {
+        padding-top: 15px;
+        .reviews-container {
+            h2 {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+    .slides img {
+        width: 160px;
+    }
+}
+
+@media (max-width: 580px) {
+    .partners {
+        padding-left: 20px;
+        padding-right: 20px;
+        .partners__container {
+            h2 {
+                font-size: 31px;
+                margin-bottom: 25px;
             }
         }
     }
@@ -565,6 +648,42 @@
                     img {
                         width: 265px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 445px) {
+    .slick-prev, .slick-next  {
+        top: -75px;
+    }
+    .contacts {
+        padding-top: 40px;
+        .contacts__container {
+            h2 {
+                font-size: 35px;
+                margin-bottom: 30px;
+            }
+            .contacts__block {
+                .contacts__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: center;
+                    height: 200px;
+                    .contacts__icons {
+                        padding-left: 0;
+                    }
+                    .contacts__address {
+                        padding-top: 0;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+                .contacts__img {
+                    width: 280px;
                 }
             }
         }
