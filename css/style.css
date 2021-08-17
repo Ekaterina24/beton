@@ -710,3 +710,196 @@ a {
   margin: 0 35px;
   width: 200px;
 }
+
+.footer {
+  background: #F5C139;
+  padding: 55px 0 47px;
+}
+
+.footer .footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__container .footer__logo {
+  margin-right: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__container .footer__logo div {
+  background-image: url(../images/logo-back.svg);
+  background-position: center;
+  background-size: cover;
+  width: 67px;
+  height: 52.5px;
+  position: relative;
+}
+
+.footer .footer__container .footer__logo div img {
+  position: absolute;
+  top: 9px;
+  left: 18px;
+}
+
+.footer .footer__container .footer__logo span {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.footer .footer__container .footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__container .footer__text :first-child {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.footer .footer__container .footer__text :last-child {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.strelka a {
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  border-radius: 50%;
+  background-color: #f4deb4;
+  position: fixed;
+  width: 58px;
+  z-index: 75;
+  height: 58px;
+  bottom: 185px;
+  right: 65px;
+}
+
+.strelka a img {
+  position: absolute;
+  top: 19px;
+  left: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#phone {
+  background: radial-gradient(50% 50% at 50% 50%, #0176FF 0%, #72B3FF 100%);
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
+#phone::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #0176FF 0%, #72B3FF 100%);
+  z-index: -1;
+  -webkit-animation: pulse2 1s infinite;
+          animation: pulse2 1s infinite;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}

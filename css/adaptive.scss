@@ -84,6 +84,22 @@
     }
 }
 
+@media (max-width: 1230px) {
+    .header {
+        padding-right: 20px;
+        &__container {
+            justify-content: space-between;
+            #menu {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        &__inf {
+            margin-left: 0;
+        }
+    }
+}
+
 @media (max-width: 1220px) {
     .main {
         padding-top: 60px;
@@ -105,27 +121,20 @@
         }
         &__btn {
             margin-top: 60px;
-        }   
+        }
     }
-    
 }
 
-@media (max-width: 1230px) {
-    .header {
+@media (max-width: 1200px) {
+    .footer {
+        padding-left: 20px;
         padding-right: 20px;
-        &__container {
-            justify-content: space-between;
-            #menu {
-                margin-left: 0;
-                margin-right: 0;
+        .footer__container {
+            .footer__logo {
+                margin-right: 45px;
             }
         }
-        &__inf {
-            margin-left: 0;
-        }
-        
     }
-    
 }
 
 @media (max-width: 1120px) {
@@ -221,6 +230,21 @@
     }
 }
 
+@media (max-width: 1040px) {
+    .footer {
+        .footer__container {
+            .footer__text {
+                :first-child {
+                    font-size: 30px;
+                }
+                :last-child {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1030px) {
     .slick-prev, .slick-next  {
         top: -30px;
@@ -261,6 +285,23 @@
                 margin-right: auto;
             }
         }
+    }
+
+    .strelka a {
+        right: 25px;
+        bottom: 142px;
+    }
+    #phone {
+        width: 70px;
+        height: 70px;
+        right: 20px;
+        img {
+            width: 30px;
+        }
+    }
+    #phone::before {
+        width: 70px;
+        height: 70px;
     }
 
 }
@@ -375,6 +416,22 @@
     }
     #accordion div {
         width: 80%;
+    }
+
+    .footer {
+        padding-top: 25px;
+        .footer__container {
+            flex-direction: column;
+            .footer__text {
+                text-align: center;
+                display: block;
+                height: 60px;
+                max-width: 584px;
+                :first-child {
+                    font-size: 28px;
+                }
+            }
+        }
     }
 }
 
@@ -567,6 +624,34 @@
     }
     .slides img {
         width: 160px;
+    }
+
+    .footer {
+        .footer__container {
+            .footer__text {
+                :first-child {
+                    line-height: 29px;
+                    font-size: 24px;
+                }
+                :last-child {
+                    line-height: 45px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .strelka a {
+        right: 6px;
+    }
+
+    #phone {
+        width: 50px;
+        height: 50px;
+        right: 10px;
+    }
+    #phone::before {
+        width: 50px;
+        height: 50px;
     }
 }
 

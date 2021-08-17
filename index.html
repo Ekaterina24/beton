@@ -15,7 +15,7 @@
 
 <body>
     <div class="content">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container">
                 <a href="#" class="header__logo">
                     <div>
@@ -29,11 +29,11 @@
                         <path
                             d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
                     </svg>
-                    <a href="#">Главная</a>
-                    <a href="#">Товары</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Отзывы</a>
+                    <a href="#main">Главная</a>
+                    <a href="#products">Товары</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#delivery">Доставка</a>
+                    <a href="#reviews">Отзывы</a>
                 </nav>
 
                 <div id="burger">
@@ -124,7 +124,7 @@
             </div>
         </header>
 
-        <main class="main">
+        <main class="main" id="main">
             <div class="main__container">
                 <div class="main__content">
                     <h1>Завод по
@@ -148,7 +148,7 @@
                         </li>
                     </ul>
                     <div class="main__btn">
-                        <a href="#">Посмотреть товары</a>
+                        <a href="#products">Посмотреть товары</a>
                     </div>
                 </div>
                 <div class="main__img">
@@ -180,7 +180,7 @@
         <div class="questions-container">
             <h2 class="questions-title">Ответы на часто задаваемые вопросы</h2>
             <div id="accordion">
-                <h3 class="section">Как Долго вы будете обрабатывать наши фотографии после торжества?</h3>
+                <h3 class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, recusandae!?</h3>
                 <div style="display: none;">
                     <p>
                         Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
@@ -189,7 +189,7 @@
                         odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
                     </p>
                 </div>
-                <h3 class="section">Сколько у вас лет опыта в сфере фотографии свадеб?</h3>
+                <h3 class="section">Lorem ipsum dolor sit amet, consectetur adipisicing.?</h3>
                 <div>
                     <p>
                         Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -198,7 +198,7 @@
                         suscipit faucibus urna.
                     </p>
                 </div>
-                <h3 class="section">Какие цены на ваши услуги?</h3>
+                <h3 class="section">Lorem ipsum dolor sit amet.?</h3>
                 <div>
                     <p>
                         Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -212,7 +212,7 @@
                         <li>List item three</li>
                     </ul>
                 </div>
-                <h3 class="section">Вы занимаетесь другими направлениями фотосессий?</h3>
+                <h3 class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo.?</h3>
                 <div>
                     <p>
                         Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -226,7 +226,7 @@
                         inceptos himenaeos.
                     </p>
                 </div>
-                <h3 class="section">Могу ли я получить все фотографии в печатном варианте?</h3>
+                <h3 class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, quasi, quisquam.?</h3>
                 <div>
                     <p>
                         Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -244,7 +244,7 @@
         </div>
     </div>
 
-    <div class="products">
+    <div class="products" id="products">
         <div class="products__container">
             <h2>Товары</h2>
             <div class="products__cards">
@@ -273,7 +273,7 @@
         </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="services__container">
             <h2>Услуги</h2>
             <div class="services__block">
@@ -304,7 +304,7 @@
         </div>
     </div>
 
-    <div class="delivery">
+    <div class="delivery" id="delivery">
         <div class="delivery__container">
             <h2>Доставка</h2>
             <div class="delivery__text">
@@ -336,7 +336,7 @@
         </div>
     </div>
 
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="reviews-container">
             <h2>Отзывы</h2>
             <div class="slides">
@@ -474,6 +474,33 @@
                 <img src="images/partner.svg" alt="">
             </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__container">
+            <a href="#" class="footer__logo">
+                <div>
+                    <img src="images/logo.svg" alt="logo">
+                </div>
+                <span>Спецбетон</span>
+            </a>
+            <div class="footer__text">
+                <div>Завод по производству бетонных изделий</div>
+                <div>ООО “ИГРУС” - СТРОИТЕЛЬНАЯ ОРГАНИЗАЦИЯ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="strelka">
+            <a href="#header">
+                <img src="images/s1.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div id="phone">
+        <img src="images/Group.svg" alt="">
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>

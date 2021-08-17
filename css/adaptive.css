@@ -75,6 +75,24 @@
   }
 }
 
+@media (max-width: 1230px) {
+  .header {
+    padding-right: 20px;
+  }
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__container #menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header__inf {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 1220px) {
   .main {
     padding-top: 60px;
@@ -100,21 +118,13 @@
   }
 }
 
-@media (max-width: 1230px) {
-  .header {
+@media (max-width: 1200px) {
+  .footer {
+    padding-left: 20px;
     padding-right: 20px;
   }
-  .header__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .header__container #menu {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .header__inf {
-    margin-left: 0;
+  .footer .footer__container .footer__logo {
+    margin-right: 45px;
   }
 }
 
@@ -205,6 +215,15 @@
   }
 }
 
+@media (max-width: 1040px) {
+  .footer .footer__container .footer__text :first-child {
+    font-size: 30px;
+  }
+  .footer .footer__container .footer__text :last-child {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 1030px) {
   .slick-prev, .slick-next {
     top: -30px;
@@ -239,6 +258,22 @@
     max-width: 567px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .strelka a {
+    right: 25px;
+    bottom: 142px;
+  }
+  #phone {
+    width: 70px;
+    height: 70px;
+    right: 20px;
+  }
+  #phone img {
+    width: 30px;
+  }
+  #phone::before {
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -360,6 +395,24 @@
   }
   #accordion div {
     width: 80%;
+  }
+  .footer {
+    padding-top: 25px;
+  }
+  .footer .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__container .footer__text {
+    text-align: center;
+    display: block;
+    height: 60px;
+    max-width: 584px;
+  }
+  .footer .footer__container .footer__text :first-child {
+    font-size: 28px;
   }
 }
 
@@ -516,6 +569,26 @@
   }
   .slides img {
     width: 160px;
+  }
+  .footer .footer__container .footer__text :first-child {
+    line-height: 29px;
+    font-size: 24px;
+  }
+  .footer .footer__container .footer__text :last-child {
+    line-height: 45px;
+    font-size: 11px;
+  }
+  .strelka a {
+    right: 6px;
+  }
+  #phone {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+  }
+  #phone::before {
+    width: 50px;
+    height: 50px;
   }
 }
 

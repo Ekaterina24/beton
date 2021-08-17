@@ -559,6 +559,135 @@ a {
     }
 }
 
+.footer {
+    background: #F5C139;
+    padding: 55px 0 47px;
+    .footer__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        .footer__logo {
+            margin-right: 75px;
+            display: flex;
+            align-items: center;
+            width: 210px;
+            justify-content: space-between;
+            div {
+                background-image: url(../images/logo-back.svg);
+                background-position: center;
+                background-size: cover;
+                width: 67px;
+                height: 52.5px;
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 9px;
+                    left: 18px;
+                }
+            }
+            span {
+                font-weight: 900;
+                font-size: 18px;
+                letter-spacing: 0.065em;
+                text-transform: uppercase;
+                color: #000000;
+                margin-bottom: 13px;
+            }
+        }
+        .footer__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 75px;
+            justify-content: space-between;
+            :first-child {
+                font-size: 36px;
+                line-height: 44px;
+            }
+            :last-child {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.strelka a {
+    margin: 0;
+    text-decoration: none;
+    display: block;
+
+    border-radius: 50%;
+    background-color: rgb(244, 222, 180);
+    position: fixed;
+    width: 58px;
+    z-index: 75;
+    height: 58px;
+    bottom: 185px;
+    right: 65px;
+}
+
+.strelka a img {
+    position: absolute;
+    top: 19px;
+    left: 18px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#phone {
+    background: radial-gradient(50% 50% at 50% 50%, #0176FF 0%, #72B3FF 100%);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+#phone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, #0176FF 0%, #72B3FF 100%);
+    z-index: -1;
+    animation: pulse2 1s infinite;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
 
 
 
