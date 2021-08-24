@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="../../beton/slick/slick.css">
     <link rel="stylesheet" href="../../beton/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
 </head>
@@ -29,11 +31,11 @@
                         <path
                             d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
                     </svg>
-                    <a href="#main">Главная</a>
-                    <a href="#products">Товары</a>
-                    <a href="#services">Услуги</a>
-                    <a href="#delivery">Доставка</a>
-                    <a href="#reviews">Отзывы</a>
+                    <a href="#main" class="hvr-grow">Главная</a>
+                    <a href="#products" class="hvr-grow">Товары</a>
+                    <a href="#services" class="hvr-grow">Услуги</a>
+                    <a href="#delivery" class="hvr-grow">Доставка</a>
+                    <a href="#reviews" class="hvr-grow">Отзывы</a>
                 </nav>
 
                 <div id="burger">
@@ -49,7 +51,7 @@
                 </div>
 
                 <div class="header__icons">
-                    <a href="#">
+                    <a href="https://wa.me/79610787272">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                             style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -66,7 +68,7 @@
                         </svg>
                     </a>
 
-                    <a href="#">
+                    <a href="viber://chat?number=%2B79610787272">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                             style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -136,7 +138,7 @@
                     <ul class="items">
                         <li class="item one">
                             <img src="images/truck-delivery.svg" alt="delivery">
-                            Быстрая доставка по области
+                            Быстрая доставка до объекта
                         </li>
                         <li class="item two">
                             <img src="images/lightning-bolt.svg" alt="bolt">
@@ -148,7 +150,7 @@
                         </li>
                     </ul>
                     <div class="main__btn">
-                        <a href="#products">Посмотреть товары</a>
+                        <a href="#products" class='preview-block__btn custom-btn'>Посмотреть товары</a>
                     </div>
                 </div>
                 <div class="main__img">
@@ -164,11 +166,11 @@
                 <h2>
                     Спецбетон
                 </h2>
-                <p>Продажа товарного бетона, тощего бетона и цементного раствора от производителя на граните и гравии, с доставкой своим автотранспортом и подачей к месту укладки собственными автобетононасосами.
+                <p class="wow animate__backInLeft">Продажа товарного бетона, тощего бетона и цементного раствора от производителя на граните и гравии, с доставкой своим автотранспортом и подачей к месту укладки собственными автобетононасосами.
                 </p>
-                <p>Мы работаем на этом рынке с 1998 года, и за это время накопили богатый опыт по производству бетона, качественной доставки его до строительных объектов, а также подачи его автобетононасосами.
+                <p class="wow animate__backInRight">Мы работаем на этом рынке с 1998 года, и за это время накопили богатый опыт по производству бетона, качественной доставки его до строительных объектов, а также подачи его автобетононасосами.
                 </p>
-                <p>Мы являемся производителем бетона и раствора, а не посредником.</p>
+                <p class="wow animate__backInLeft">Мы являемся производителем бетона и раствора, а не посредником.</p>
             </div>
             <div class="about__img">
                 <img src="images/unnamed.png" alt="">
@@ -248,21 +250,21 @@
         <div class="products__container">
             <h2>Товары</h2>
             <div class="products__cards">
-                <div class="products__card">
+                <div class="products__card hvr-round-corners">
                     <h2>Бетон</h2>
                     <div class="products__card__block">
                         <img src="images/image1.svg">
                         <span>от 450р/м^3</span>
                     </div>
                 </div>
-                <div class="products__card">
+                <div class="products__card hvr-round-corners">
                     <h2>Блоки</h2>
                     <div class="products__card__block">
                         <img src="images/image2.svg">
                         <span class="block">от 450р/м^3</span>
                     </div>
                 </div>
-                <div class="products__card">
+                <div class="products__card hvr-round-corners">
                     <h2>Растворы</h2>
                     <div class="products__card__block">
                         <img src="images/image3.svg" class="drop__img">
@@ -275,7 +277,7 @@
 
     <div class="services" id="services">
         <div class="services__container">
-            <h2>Услуги</h2>
+            <h2 class="wow animate__lightSpeedInLeft">Услуги</h2>
             <div class="services__block">
                 <div class="services__text">
                     <div class="services__text__words">
@@ -306,7 +308,7 @@
 
     <div class="delivery" id="delivery">
         <div class="delivery__container">
-            <h2>Доставка</h2>
+            <h2 class="wow animate__lightSpeedInRight">Доставка</h2>
             <div class="delivery__text">
                 Доставка товаров осуществляется по Самарской области
                 в соответствии со следующей таблицей
@@ -338,7 +340,7 @@
 
     <div class="reviews" id="reviews">
         <div class="reviews-container">
-            <h2>Отзывы</h2>
+            <h2 class="wow animate__rotateInUpLeft">Отзывы</h2>
             <div class="slides">
                 <div class="reviews__text">
                     <img src="images/reviews.jpg">
@@ -379,7 +381,7 @@
 
     <div class="contacts">
         <div class="contacts__container">
-            <h2>Контакты</h2>
+            <h2 class="wow animate__jackInTheBox">Контакты</h2>
             <div class="contacts__block">
                 <div class="contacts__text">
                     <div class="contacts__number">
@@ -387,7 +389,7 @@
                         <div class="email">specbeton163@mail.ru</div>
                     </div>
                     <div class="contacts__icons">
-                        <a href="#">
+                        <a href="https://wa.me/79610787272">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                  style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -404,7 +406,7 @@
                         </svg>
                         </a>
 
-                        <a href="#">
+                        <a href="viber://chat?number=%2B79610787272">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                  style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -492,7 +494,7 @@
     </div>
 
     <div class="container">
-        <div class="strelka">
+        <div class="strelka" id="button-up">
             <a href="#header">
                 <img src="images/s1.png" alt="">
             </a>
@@ -546,6 +548,16 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+            });
+        });
+    </script>
     <script src="../../beton/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -80,5 +80,23 @@ document.querySelectorAll('#menu > *').forEach((item) => {
         }
     });
 
+    var button = $('#button-up');
+    $(window).scroll (function () {
+        if ($(this).scrollTop () > 300) {
+            button.fadeIn();
+        } else {
+            button.fadeOut();
+        }
+    });
+    button.on('click', function(){
+        $('body, html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    new WOW({
+        animateClass: 'animate__animated',
+    }).init();
 
 });

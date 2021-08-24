@@ -301,7 +301,7 @@
         right: 25px;
         bottom: 142px;
     }
-    #phone {
+    #phone1 {
         width: 70px;
         height: 70px;
         right: 20px;
@@ -309,7 +309,7 @@
             width: 30px;
         }
     }
-    #phone::before {
+    #phone1::before {
         width: 70px;
         height: 70px;
     }
@@ -658,15 +658,27 @@
         }
     }
     .strelka a {
-        right: 6px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        img {
+            top: 18px;
+            left: 14px;
+        }
     }
 
-    #phone {
+    #phone1 {
         width: 50px;
         height: 50px;
         right: 10px;
+        img {
+            width: 23px;
+            position: absolute;
+            top: 14px;
+            right: 13px;
+        }
     }
-    #phone::before {
+    #phone1::before {
         width: 50px;
         height: 50px;
     }
