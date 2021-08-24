@@ -118,7 +118,7 @@ a {
         margin-left: 0;
         h1 {
             margin: 0;
-            max-width: 412px;
+            max-width: 426px;
             font-weight: bold;
             font-size: 40px;
             line-height: 49px;
@@ -640,7 +640,7 @@ a {
     margin: 0 auto;
 }
 
-#phone {
+#phone1 {
     background: radial-gradient(50% 50% at 50% 50%, #0176FF 0%, #72B3FF 100%);
     width: 100px;
     height: 100px;
@@ -654,7 +654,7 @@ a {
     animation: pulse 1s infinite;
 }
 
-#phone::before {
+#phone1::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -685,6 +685,147 @@ a {
         transform: scale(1.5);
         opacity: 0;
     }
+}
+
+#reservation-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#reservation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 40.67px 8.33px rgba(2, 7, 8, 1);
+    width: 584px;
+    padding: 45px 35px 70px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#reservation #reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#reservation h2.block-title {
+    font-size: 25px;
+}
+
+#reservation #reserve {
+    margin: 30px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reservation .reserve-input label {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 22px;
+}
+
+#reservation .reserve-input {
+    margin-top: 15px;
+}
+
+#reservation .reserve-input input {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    width: 248px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    outline: 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#reservation #reserve-button {
+    text-align: center;
+}
+
+#reservation #reserve-button button {
+    margin-top: 0;
+}
+
+#reservation #reservation-sent {
+    display: none;
+}
+
+#reservation #reservation-sent h2.block-title {
+    margin-top: 95px;
+    font-size: 25px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#reservation #reservation-sent #reservation-sent-text {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 35px 0 110px;
+}
+
+#reservation #reserve-error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    display: none;
+}
+
+.block-title {
+    font-size: 35px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-yellow {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(246, 165, 1);
+    background-image: -moz-linear-gradient( 180deg, rgb(255,199,59) 0%, rgb(235,161,0) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(255,199,59) 0%, rgb(235,161,0) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(255,199,59) 0%, rgb(235,161,0) 100%);
+    width: 209px;
+    height: 50px;
+    margin-top: 60px;
+    outline: 0;
+    border: 0;
+}
+
+.btn-yellow:hover {
+    box-shadow: 0px 0px 13.5px 1.5px rgba(204, 142, 6, 1);
+    cursor: pointer;
 }
 
 

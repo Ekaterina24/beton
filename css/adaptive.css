@@ -120,11 +120,25 @@
 
 @media (max-width: 1200px) {
   .footer {
+    padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 75px;
   }
-  .footer .footer__container .footer__logo {
-    margin-right: 45px;
+  .footer .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__container .footer__text {
+    text-align: center;
+    display: block;
+    height: 60px;
+    max-width: 584px;
+  }
+  .footer .footer__container .footer__text :first-child {
+    font-size: 28px;
   }
 }
 
@@ -396,24 +410,6 @@
   #accordion div {
     width: 80%;
   }
-  .footer {
-    padding-top: 25px;
-  }
-  .footer .footer__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .footer__container .footer__text {
-    text-align: center;
-    display: block;
-    height: 60px;
-    max-width: 584px;
-  }
-  .footer .footer__container .footer__text :first-child {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 860px) {
@@ -446,6 +442,29 @@
   }
   .header__icons {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservation #reserve {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 0;
+  }
+  #reservation-container {
+    overflow: scroll;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 20px;
+  }
+  #reservation-container #reservation {
+    max-width: 320px;
+    padding: 35px;
+  }
+  #reserve-button {
+    margin-top: 20px;
   }
 }
 
@@ -569,6 +588,9 @@
   }
   .slides img {
     width: 160px;
+  }
+  .footer {
+    padding-bottom: 60px;
   }
   .footer .footer__container .footer__text :first-child {
     line-height: 29px;
@@ -699,5 +721,11 @@
   }
   .contacts .contacts__container .contacts__block .contacts__img {
     width: 280px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    padding-bottom: 75px;
   }
 }

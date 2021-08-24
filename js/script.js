@@ -47,5 +47,38 @@ document.querySelectorAll('#menu > *').forEach((item) => {
         ]
     });
 
+    $('.open-modal').click(() => {
+        $('#reservation-container').css('display', 'flex');
+    });
+
+    $('#reservation-cancel-close, #reservation-container').click((e) => {
+        if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel-close') {
+            $('#reservation-container').hide();
+        }
+    });
+
+    $('#reserve-button > button').click(() => {
+        let name = $('#name');
+        let phone = $('#phone');
+
+        if (name.val()  && phone.val()) {
+            $.ajax({
+                type: 'post',
+                url: 'mail.php',
+                data: 'name=' + name.val() + '&phone=' + phone.val(),
+                success: () => {
+                    $('#reservation-sent').show();
+                    $('#reservation-content').hide();
+                },
+                error: () => {
+                    $('#reservation-container').hide();
+                    alert('Ошибка заявки. Свяжитесь, пожалуйста, по номеру телефона.')
+                }
+            });
+        } else {
+            $('#reserve-error').show();
+        }
+    });
+
 
 });

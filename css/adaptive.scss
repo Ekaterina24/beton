@@ -126,12 +126,22 @@
 }
 
 @media (max-width: 1200px) {
+
     .footer {
+        padding-top: 25px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 75px;
         .footer__container {
-            .footer__logo {
-                margin-right: 45px;
+            flex-direction: column;
+            .footer__text {
+                text-align: center;
+                display: block;
+                height: 60px;
+                max-width: 584px;
+                :first-child {
+                    font-size: 28px;
+                }
             }
         }
     }
@@ -417,22 +427,6 @@
     #accordion div {
         width: 80%;
     }
-
-    .footer {
-        padding-top: 25px;
-        .footer__container {
-            flex-direction: column;
-            .footer__text {
-                text-align: center;
-                display: block;
-                height: 60px;
-                max-width: 584px;
-                :first-child {
-                    font-size: 28px;
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 860px) {
@@ -475,6 +469,28 @@
         }
     }
 
+}
+
+@media (max-width: 767px) {
+    #reservation #reserve {
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    #reservation-container {
+        overflow: scroll;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    #reservation-container #reservation {
+        max-width: 320px;
+        padding: 35px;
+    }
+
+    #reserve-button {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 665px) {
@@ -627,6 +643,7 @@
     }
 
     .footer {
+        padding-bottom: 60px;
         .footer__container {
             .footer__text {
                 :first-child {
@@ -772,5 +789,11 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+        padding-bottom: 75px;
     }
 }
