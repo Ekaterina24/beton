@@ -338,7 +338,7 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 65px;
     background: #000000c7;
     top: 0;
     left: 0;
@@ -346,10 +346,10 @@
   .header__container #menu svg {
     display: block;
     width: 24px;
-    fill: #a46b00;
+    fill: #e8d70e;
     position: absolute;
-    top: -170px;
-    left: 20px;
+    top: -175px;
+    left: 35px;
   }
   .header__container #menu.open {
     display: -webkit-box;
@@ -358,8 +358,8 @@
   }
   .header__container #menu a {
     margin: 15px 5px;
-    font-size: 16px;
-    color: #a46b00;
+    font-size: 25px;
+    color: #e8d70e;
     line-height: 1.2;
   }
   .about .about__container .about__text {
