@@ -497,6 +497,18 @@ a {
     margin-right: auto;
 }
 
+.reviews__text div {
+    box-shadow: 0 0 15px black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.reviews__text div img {
+    background-position: center;
+}
+
 
 .contacts {
     padding: 95px 0 100px;
