@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family:  Montserrat, sans-serif;
+    overflow-x:hidden;  
 }
 
 a {
@@ -331,11 +332,11 @@ a {
                 padding: 50px 25px 80px 32px;
                 height: 277px;
                 margin: 15px;
-                transition-duration: 2s;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.85);
+                cursor: pointer;
+                border-radius: 15px;
                 &:hover {
-                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.85);
-                    cursor: pointer;
-                    transition-duration: 1s;
+                    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.99);
                 }
                 h2 {
                     margin: 0;
@@ -928,6 +929,10 @@ a {
     0% { left: -30px; margin-left: 0px; }
     30% { left: 110%; margin-left: 80px; }
     100% { left: 110%; margin-left: 80px; }
+}
+
+.wow {
+    visibility: visible;
 }
 
 

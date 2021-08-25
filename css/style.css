@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -430,16 +431,15 @@ a {
   padding: 50px 25px 80px 32px;
   height: 277px;
   margin: 15px;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-}
-
-.products .products__container .products__cards .products__card:hover {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.85);
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.85);
   cursor: pointer;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  border-radius: 15px;
+}
+
+.products .products__container .products__cards .products__card:hover {
+  -webkit-box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.99);
+          box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.99);
 }
 
 .products .products__container .products__cards .products__card h2 {
@@ -1177,4 +1177,8 @@ a {
     left: 110%;
     margin-left: 80px;
   }
+}
+
+.wow {
+  visibility: visible;
 }

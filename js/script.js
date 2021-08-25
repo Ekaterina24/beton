@@ -95,8 +95,5 @@ document.querySelectorAll('#menu > *').forEach((item) => {
         return false;
     });
 
-    new WOW({
-        animateClass: 'animate__animated',
-    }).init();
 
 });

@@ -250,21 +250,21 @@
         <div class="products__container">
             <h2 class="wow animate__lightSpeedInRight">Товары</h2>
             <div class="products__cards">
-                <div class="products__card hvr-round-corners">
+                <div class="products__card">
                     <h2>Бетон</h2>
                     <div class="products__card__block">
                         <img src="images/image1.svg">
                         <span>от 450р/м^3</span>
                     </div>
                 </div>
-                <div class="products__card hvr-round-corners">
+                <div class="products__card">
                     <h2>Блоки</h2>
                     <div class="products__card__block">
                         <img src="images/image2.svg">
                         <span class="block">от 450р/м^3</span>
                     </div>
                 </div>
-                <div class="products__card hvr-round-corners">
+                <div class="products__card">
                     <h2>Растворы</h2>
                     <div class="products__card__block">
                         <img src="images/image3.svg" class="drop__img">
@@ -549,6 +549,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="../../beton/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(function(){
             $("a[href^='#']").click(function(){
@@ -558,8 +559,12 @@
             });
         });
     </script>
-    <script src="../../beton/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        new WOW({
+            animateClass: 'animate__animated',
+        }).init();
+    </script>
 </body>
 
 </html>
