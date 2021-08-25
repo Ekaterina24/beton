@@ -23,12 +23,12 @@
   .products {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 50px;
+    padding-top: 28px;
     padding-bottom: 35px;
   }
   .products .products__container h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 42px;
     margin-bottom: 40px;
   }
   .products .products__container .products__cards {
