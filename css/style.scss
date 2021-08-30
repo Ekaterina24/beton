@@ -406,31 +406,10 @@ a {
             margin-bottom: 35px;
         }
         .delivery__text {
-            max-width: 1005px;
+            max-width: 1053px;
             margin-bottom: 40px;
             font-size: 30px;
             line-height: 44px;
-        }
-        table {
-            text-align: center;
-            border: 2px solid black;
-            thead {
-                background: rgba(189, 159, 159, 0.86);
-                td {
-                    padding: 12px 0;
-                }
-            }
-            tbody {
-                background: rgba(255, 255, 255, 0.86);
-                td {
-                    padding: 32px 0;
-
-                }
-            }
-            td {
-                font-weight: 300;
-                font-size: 40px;
-            }
         }
     }
 
@@ -518,7 +497,7 @@ a {
         margin: 0 auto;
         h2 {
             margin: 0;
-            font-weight: 600;
+            font-weight: 800;
             font-size: 40px;
         }
         .contacts__block {

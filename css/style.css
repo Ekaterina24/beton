@@ -527,36 +527,10 @@ a {
 }
 
 .delivery .delivery__container .delivery__text {
-  max-width: 1005px;
+  max-width: 1053px;
   margin-bottom: 40px;
   font-size: 30px;
   line-height: 44px;
-}
-
-.delivery .delivery__container table {
-  text-align: center;
-  border: 2px solid black;
-}
-
-.delivery .delivery__container table thead {
-  background: rgba(189, 159, 159, 0.86);
-}
-
-.delivery .delivery__container table thead td {
-  padding: 12px 0;
-}
-
-.delivery .delivery__container table tbody {
-  background: rgba(255, 255, 255, 0.86);
-}
-
-.delivery .delivery__container table tbody td {
-  padding: 32px 0;
-}
-
-.delivery .delivery__container table td {
-  font-weight: 300;
-  font-size: 40px;
 }
 
 /* main */
@@ -653,7 +627,7 @@ a {
 
 .contacts .contacts__container h2 {
   margin: 0;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 40px;
 }
 
